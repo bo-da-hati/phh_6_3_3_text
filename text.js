@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-   let list = document.getElementById('list');
-   console.log(list.innerHTML).
-   console.log(list.textContent)
+   document.getElementById('btn').addEventListener('click',function(){
+       let name = document.getElementById('name');
+       let result = document.getElementById('result');
+       result.textContent = 'こんにちわ、' + name.value +'さん！';
+
+
+   }, false);
       
 
 }, false);
